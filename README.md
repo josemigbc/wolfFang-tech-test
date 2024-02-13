@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 First, run the API development server:
 ```bash
+pip install -r requirements.txt
 python backend/manage.py runserver
 ```
 
