@@ -3,6 +3,7 @@ import { Profile } from "@/components/form/FormSelect";
 import Messages from "@/components/messages/Messages";
 import ButtonSave from "@/components/odontogram/ButtonSave";
 import Control from "@/components/odontogram/Control"
+import ExitButton from "@/components/odontogram/ExitButton";
 import Odontogram from "@/components/odontogram/Odontogram"
 import OdontogramContext from "@/components/odontogram/OdontogramContext"
 import { IOdontogram } from "@/utils/teeth-states"
@@ -52,11 +53,13 @@ export default function OdontogramContainer({ profile }: { profile: Profile }) {
             <div className="mb-6">
                 <Odontogram />
             </div>
-            <div>
+
+            <div className=" border-t-2 border-slate-300 py-2">
                 <Control changeToothState={changeToothState} tooth={tooth} />
             </div>
-            <div>
+            <div className="flex justify-around items-center">
                 <ButtonSave saveOdontogram={saveOdontogram} />
+                <ExitButton/>
             </div>
             {message && <Messages message={message} />}
         </OdontogramContext.Provider>

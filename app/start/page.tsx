@@ -3,7 +3,7 @@ import FormSelect from "@/components/form/FormSelect";
 import Title from "@/components/global/Title";
 
 const getProfiles = async () => {
-    const response = await fetch('http://127.0.0.1:8000/profile', {cache: 'no-store'})
+    const response = await fetch('http://127.0.0.1:8000/profile/', {cache: 'no-store'})
     return await response.json()
 }
 

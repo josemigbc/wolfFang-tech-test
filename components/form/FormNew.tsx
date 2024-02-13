@@ -2,7 +2,6 @@
 import { useRouter } from "next/navigation";
 import Input from "./Input";
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import { Profile } from "./FormSelect";
 
 export default function FormNew() {
 
